@@ -12,8 +12,6 @@ do
 	cat httprandom.txt | uniq -u > `date`.txt
 	rm -rf httprandom.txt; rm -rf proxies.txt
 	echo ""
-	echo "Done Scraping! Starting Proxy Finder! This Will Take A While!"
-	##proxybroker find --types HTTP HTTPS >> proxies.txt
 	echo "DONE! Going To Sleep For 1 Hour"
 	sleep 3600
 done
